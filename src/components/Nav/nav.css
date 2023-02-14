@@ -1,0 +1,123 @@
+@media screen and (max-width: 600px) {
+  li {
+    width: 100%;
+  }
+
+  .name {
+    background-size: 80px;
+  }
+
+  li a {
+    padding: 10px;
+  }
+}
+
+/* For the Home Page link */
+.mainPage {
+  background: url("../Images/home-transparent-white.png");
+  background-size: 40px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the Projects link */
+.Projects {
+  background: url("../Images/gears.png");
+  background-size: 40px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the Git-Hub link */
+.git {
+  background: url("../Images/GitHub Logo.png");
+  background-size: 80px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the LinkedIn Link */
+.linkedIn {
+  background: url("../Images/LinkedIn Icon.png");
+  background-size: 70px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For My Contact Info */
+.contact {
+  background: url("../Images/Contact Image.png");
+  background-size: 40px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For my name on the Nav Bar */
+.name {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(245, 24, 0), 0 0 5px darkblue;
+  background: url("../Images/ef536660637745.5a54876d6bbe1.gif");
+  background-size: 100px;
+  background-color: null;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.name:hover {
+  color: rgb(255, 0, 0);
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+}
+/* For the Resume link */
+.resume {
+  background: url("../Images/resume icon.png");
+  background-size: 20px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the Codewars badge */
+.codeWars {
+  margin-left: auto;
+}
+
+/* Styles for the nav bar itself */
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+li {
+  margin: 0;
+  padding: 0 10px;
+}
+
+li a {
+  display: block;
+  color: rgb(174, 143, 96);
+  text-align: center;
+  padding: 14px 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(231, 150, 44),
+    0 0 5px rgb(211, 219, 56);
+  font-weight: bold;
+}
+
+.clock {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(245, 24, 0), 0 0 5px darkblue;
+  margin-left: auto;
+  padding: 14px 16px;
+}
