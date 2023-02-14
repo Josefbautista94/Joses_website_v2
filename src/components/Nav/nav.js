@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import Pdf from "../Other_Items/JoseBautista_Resume.pdf";
 
 class Nav extends Component {
   render() {
@@ -35,11 +36,15 @@ class Nav extends Component {
             <Link to="/Contact">My Contact Info</Link>
           </li>
           <li className="resume">
-            {/* <a href={Pdf} target="_blank" rel="noopener noreferrer">
+            <a href={Pdf} target="_blank" rel="noopener noreferrer">
               Resume
-            </a> */}
+            </a>
           </li>
-          <li>{/* <a className="name">Jose F. Bautista</a> */}</li>
+          <li>
+            <a href="https://google.com" className="name">
+              Jose F. Bautista
+            </a>
+          </li>
           <li className="codeWars">
             <img
               src="https://www.codewars.com/users/Josefbautista94/badges/large"

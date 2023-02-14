@@ -1,17 +1,17 @@
 h1 {
-  font-weight: 600px;
+  font-weight: 600;
   color: rgb(240, 236, 236);
 }
 
 .Buttons {
-  height: 75px;
-  width: 250px;
-  font-size: 30px;
+  height: 50px;
+  width: 200px;
+  font-size: 24px;
   color: #1b1b1b;
   background-color: rgb(204, 204, 204);
-  border-radius: 40px;
+  border-radius: 30px;
   border-color: rgb(145, 145, 148);
-  opacity: 0.5;
+  opacity: 0.8;
   transition-duration: 0.4s;
   outline: none;
 }
@@ -22,21 +22,15 @@ h1 {
   opacity: 0.9;
 }
 
-/* This is for my Background */
 .Main-content {
   background: url("../Images/IMG_7614 2.jpg");
   min-height: 100vh;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* This takes care of the items in the ceter of the page */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
 }

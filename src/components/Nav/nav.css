@@ -1,29 +1,110 @@
-.App {
-  text-align: center;
-}
+@media screen and (max-width: 600px) {
+  li {
+    width: 100%;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .name {
+    background-size: 80px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  li a {
+    padding: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* For the Home Page link */
+.mainPage {
+  background: url("../Images/home-transparent-white.png");
+  background-size: 40px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+/* For the Projects link */
+.Projects {
+  background: url("../Images/gears.png");
+  background-size: 40px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the Git-Hub link */
+.git {
+  background: url("../Images/GitHub Logo.png");
+  background-size: 80px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the LinkedIn Link */
+.linkedIn {
+  background: url("../Images/LinkedIn Icon.png");
+  background-size: 70px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For My Contact Info */
+.contact {
+  background: url("../Images/Contact Image.png");
+  background-size: 40px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For my name on the Nav Bar */
+.name {
+  color: rgb(255, 255, 255);
+  background: url("../Images/ef536660637745.5a54876d6bbe1.gif");
+  background-size: 100px;
+  background-color: null;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the Resume link */
+.resume {
+  background: url("../Images/resume icon.png");
+  background-size: 20px;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* For the Codewars badge */
+.codeWars {
+  margin-left: auto;
+}
+
+/* Styles for the nav bar itself */
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+li {
+  width: auto;
+}
+
+li a {
+  display: block;
+  color: rgb(50, 200, 200);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
 }
