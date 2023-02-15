@@ -143,3 +143,99 @@ h1 span {
   justify-content: center;
   font-size: calc(10px + 1.5vmin);
 }
+
+ection {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.js {
+  height: 15vmin;
+  pointer-events: none;
+}
+.react {
+  height: 15vmin;
+  pointer-events: none;
+  background-color: rgb(100, 212, 250);
+  border-radius: 10px;
+}
+
+.html {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.css {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.java {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.node {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.visual {
+  height: 15vmin;
+  pointer-events: none;
+  background-color: rgb(94, 28, 111);
+  border-radius: 10px;
+}
+
+.python {
+  height: 15vmin;
+  pointer-events: none;
+}
+.git1 {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.github {
+  height: 15vmin;
+  pointer-events: none;
+  background-color: blanchedalmond;
+  border-radius: 6px;
+}
+
+.h1L {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.airEx {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 1px;
+  width: 600px;
+  margin: 0 50px 0 0;
+}
+.airEx:hover {
+  color: rgba(52, 52, 52);
+  opacity: 0.5;
+}
+.chatApp {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 1px;
+  width: 300px;
+  margin: 0 50px 0 0;
+}
+.chatApp:hover {
+  color: rgba(52, 52, 52);
+  opacity: 0.5;
+}
+
+.weather {
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 1px;
+  width: 600px;
+  margin: 0 50px 0 0;
+}

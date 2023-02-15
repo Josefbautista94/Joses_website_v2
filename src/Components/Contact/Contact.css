@@ -1,4 +1,101 @@
-h1 {
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.contactPage {
+  background: url("../Images/IMG_7614 2.jpg");
+  min-height: 100vh;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h3 {
+  color: rgb(252, 252, 252);
+}
+
+/* .Email-pic{
+    position: relative;
+    top: -10px;
+  } */
+.mailto {
+  background: url("../Images/58485698e0bb315b0f7675a8.png");
+  position: relative;
+  top: -10px;
+  display: block;
+  width: 380px;
+  height: 100px;
+  display: block;
+  height: 250px;
+  font-size: 30px;
+  color: #1b1b1b;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  opacity: 0.5;
+  transition-duration: 0.4s;
+  outline: none;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+
+  color: rgb(240, 236, 236);
+}
+
+.mailto:hover {
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4d4d4d;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+h3 {
   font-weight: 600;
   color: rgb(181, 188, 194);
   transition: all 0.3s ease-in-out;
@@ -22,7 +119,7 @@ h1 {
   }
 }
 
-h1:hover {
+h3:hover {
   transform: scale(1.1);
   font-weight: bold;
   border-radius: 30px 10px 30px 10px;
@@ -30,116 +127,4 @@ h1:hover {
   background-image: linear-gradient(to right, #ffa17f, #00223e);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
-}
-
-/* h1 {
-  background-image: linear-gradient(to right, #ae8f60, #00223e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  font-size: 8rem;
-  margin: 0;
-  position: relative;
-}
-
-h1:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  top: 10%;
-  left: 0;
-  background-image: linear-gradient(to right, #4d4d4d, #1c1c1c);
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-  z-index: -1;
-  animation: animate-gradient 2s linear infinite;
-}
-
-h1:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  bottom: 10%;
-  left: 0;
-  background-image: linear-gradient(to right, #1c1c1c, #4d4d4d);
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  z-index: -1;
-  animation: animate-gradient 2s linear infinite;
-}
-
-h1 span {
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes animate-gradient {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-} */
-.Buttons {
-  height: 50px;
-  width: 200px;
-  font-size: 24px;
-  font-weight: 600;
-  color: rgb(181, 188, 194);
-  transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
-  border-radius: 25px; /* half of the height */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 10px 10px;
-  position: relative;
-  border: none;
-  outline: none;
-  text-align: center;
-}
-
-.Buttons:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 25px; /* half of the height */
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
-}
-
-.Buttons:hover:before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.Buttons:hover {
-  transform: scale(1.1);
-  font-weight: bold;
-  border-radius: 80px;
-  color: rgb(255, 255, 255);
-  background-image: linear-gradient(to right, #ffa17f, #00223e);
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
-}
-.Contact-content {
-  background: url("../Images/IMG_7614 2.jpg");
-  min-height: 100vh;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1.5vmin);
 }
