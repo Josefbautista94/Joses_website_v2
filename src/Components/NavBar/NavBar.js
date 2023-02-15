@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./Nav.css";
+import "./NavBar.css";
 import { Link } from "react-router-dom";
 import Pdf from "../Other_Items/JoseBautista_Resume.pdf";
 
-class Nav extends Component {
+class NavBar extends Component {
   render() {
     return (
       <div>
@@ -85,4 +85,4 @@ class Clock extends Component {
   }
 }
 
-export default Nav;
+export default NavBar;

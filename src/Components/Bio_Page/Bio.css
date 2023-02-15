@@ -1,95 +1,61 @@
-h1 {
-  font-weight: 600;
-  color: rgb(181, 188, 194);
-  transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
-  border-radius: 10px 30px 10px 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
+:root {
+  --primary-color: #c2b280;
+  --secondary-color: #deddd9;
+  --background-color: #e5d8b0;
 }
 
-@keyframes Gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
+/* Use a custom font */
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-h1:hover {
-  transform: scale(1.1);
+/* Use whitespace to improve readability */
+.Bio-content {
+  background: url("../Images/IMG_7614 2.jpg");
+  min-height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: calc(10px + 2vmin);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+p {
   font-weight: bold;
-  border-radius: 30px 10px 30px 10px;
-  color: rgb(174, 143, 96);
-  background-image: linear-gradient(to right, #ffa17f, #00223e);
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
+  color: rgb(0, 0, 0);
+  background-color: var(--background-color);
+  border-radius: 30px;
+  opacity: 0.9;
+
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(173, 148, 5, 0.2);
 }
 
-/* h1 {
-  background-image: linear-gradient(to right, #ae8f60, #00223e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  font-size: 8rem;
-  margin: 0;
-  position: relative;
+.Front-pic {
+  height: 50vmin;
+  pointer-events: none;
+  border-radius: 45px;
 }
 
-h1:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  top: 10%;
-  left: 0;
-  background-image: linear-gradient(to right, #4d4d4d, #1c1c1c);
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-  z-index: -1;
-  animation: animate-gradient 2s linear infinite;
-}
-
-h1:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  bottom: 10%;
-  left: 0;
-  background-image: linear-gradient(to right, #1c1c1c, #4d4d4d);
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  z-index: -1;
-  animation: animate-gradient 2s linear infinite;
-}
-
-h1 span {
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes animate-gradient {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-} */
-.Buttons {
+.RButton {
   height: 50px;
   width: 200px;
   font-size: 24px;
   font-weight: 600;
-  color: rgb(181, 188, 194);
+  color: rgb(0, 0, 0);
   transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
+  background-image: linear-gradient(to right, #d8c3a5, #e5d8b0);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
   border-radius: 25px; /* half of the height */
@@ -101,7 +67,7 @@ h1 span {
   text-align: center;
 }
 
-.Buttons:before {
+.RButton:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -110,36 +76,38 @@ h1 span {
   right: 5px;
   bottom: 5px;
   border-radius: 25px; /* half of the height */
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
+  background-image: linear-gradient(to right, #d8c3a5, #e5d8b0);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
 }
 
-.Buttons:hover:before {
+.RButton:hover:before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.Buttons:hover {
+.RButton:hover {
   transform: scale(1.1);
   font-weight: bold;
   border-radius: 80px;
   color: rgb(255, 255, 255);
-  background-image: linear-gradient(to right, #ffa17f, #00223e);
+  background-image: linear-gradient(to right, #f0e1b1, #e58130);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
 }
-.Bio-content {
-  background: url("../Images/IMG_7614 2.jpg");
-  min-height: 100vh;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1.5vmin);
+
+.paragraph {
+  background-color: var(--background-color);
+  text-align: center;
+  font-weight: bold;
+  align-content: center;
+  border-radius: 25px;
+  opacity: 0.9;
+
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0;
 }

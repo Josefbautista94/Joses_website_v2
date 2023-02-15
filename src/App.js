@@ -1,5 +1,5 @@
 import "./App.css";
-import Nav from "./Components/Nav/Nav.js";
+import NavBar from "./Components/NavBar/NavBar.js";
 import FrontPage from "./Components/FrontPage/FrontPage.js";
 import Bio from "./Components/Bio_Page/Bio.js";
 import Contact from "./Components/Contact/Contact.js";
@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
+        <NavBar />
         <Routes>
           <Route path="/" exact element={<FrontPage />} />
           <Route path="/Front-Page" element={<FrontPage />} />
