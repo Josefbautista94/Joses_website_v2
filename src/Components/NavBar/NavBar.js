@@ -41,7 +41,10 @@ class NavBar extends Component {
             </a>
           </li>
           <li>
-            <a href="https://google.com" className="name">
+            <a
+              href="https://www.youtube.com/watch?v=KWotO76SuXE"
+              className="name"
+            >
               Jose F. Bautista
             </a>
           </li>
