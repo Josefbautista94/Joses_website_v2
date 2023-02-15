@@ -1,6 +1,6 @@
 import "./App.css";
-import Nav from "./components/Nav/Nav.js";
-import FrontPage from "./components/FrontPage/FrontPage.js";
+import Nav from "./Components/Nav/Nav.js";
+import FrontPage from "./Components/FrontPage/FrontPage.js";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
