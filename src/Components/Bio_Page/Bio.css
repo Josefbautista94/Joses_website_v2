@@ -39,7 +39,7 @@ p {
   opacity: 0.9;
 
   padding: 20px;
-  max-width: 600px;
+  max-width: 800px; /* Increase the max-width to make the paragraphs wider */
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(173, 148, 5, 0.2);
 }
@@ -51,8 +51,8 @@ p {
 }
 
 .RButton {
-  height: 50px;
-  width: 100%; /* changed from 200px */
+  height: 70px; /* Increase the height to make the button bigger */
+  width: 100%;
   font-size: 24px;
   font-weight: 600;
   color: rgb(0, 0, 0);
@@ -60,7 +60,7 @@ p {
   background-image: linear-gradient(to right, #d8c3a5, #e5d8b0);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
-  border-radius: 25px; /* half of the height */
+  border-radius: 35px; /* Half of the height */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px 10px;
   position: relative;
@@ -106,10 +106,4 @@ p {
   font-weight: bold;
   align-content: center;
   border-radius: 30px;
-  opacity: 0.9;
-
-  padding: 20px;
-  max-width: 900px;
-  margin: 20px auto;
-  box-shadow: 0;
 }
