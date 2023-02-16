@@ -1,37 +1,32 @@
 import React, { Component } from "react";
 import "./FrontPage.css";
 import { Link } from "react-router-dom";
+import { Timeline } from "react-twitter-widgets";
 
 class FrontPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     return (
       <div>
         <header className="Main-content">
-          <h1> Welcome To My Personal Website </h1>
+          <h1>Welcome To My Personal Website</h1>
           <Link to="/Bio">
-            <button className="Buttons"> About Me</button>
+            <button className="Buttons">About Me</button>
           </Link>
+          <div>
+            {" "}
+            <Timeline
+              dataSource={{
+                sourceType: "profile",
+                screenName: "Hoesaymyname94",
+              }}
+              options={{
+                height: "700",
+                width: "800", // set width to 600px
+                theme: "dark", // set theme to "dark"
+              }}
+            />
+          </div>
         </header>
-
-        <div>
-          <a
-            class="twitter-timeline"
-            data-theme="dark"
-            href="https://twitter.com/Hoesaymyname94?ref_src=twsrc%5Etfw"
-          >
-            Tweets by Hoesaymyname94
-          </a>{" "}
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
       </div>
     );
   }
