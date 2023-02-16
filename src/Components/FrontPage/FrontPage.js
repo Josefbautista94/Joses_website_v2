@@ -17,7 +17,7 @@ class FrontPage extends Component {
             <Timeline
               dataSource={{
                 sourceType: "profile",
-                screenName: "Hoesaymyname94",
+                screenName: "Jose_FrancisB",
               }}
               options={{
                 height: "700",
