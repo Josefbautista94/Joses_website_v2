@@ -8,6 +8,7 @@ h1 {
   border-radius: 10px 30px 10px 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
+  margin: 0;
 }
 
 @keyframes Gradient {
@@ -49,6 +50,7 @@ h1:hover {
   border: none;
   outline: none;
   text-align: center;
+  margin-top: 1em;
 }
 
 .Buttons:before {
@@ -91,6 +93,32 @@ h1:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 1.5vmin);
+}
+
+.twit {
+  margin: 20px 0; /* Add some space around the timeline */
+}
+
+/* Style the Twitter widget iframe */
+.twit iframe {
+  border: none; /* Remove the default border */
+  width: 100%; /* Make the widget responsive */
+}
+@media (max-width: 767px) {
+  .twit {
+    width: 100%;
+  }
+  .twit .timeline-Header {
+    display: none;
+  }
+}
+.twit {
+  padding: 20px;
+}
+.twit .twitter-timeline {
+  width: 100%;
 }

@@ -12,7 +12,7 @@ class FrontPage extends Component {
           <Link to="/Bio">
             <button className="Buttons">About Me</button>
           </Link>
-          <div>
+          <div className="twit">
             {" "}
             <Timeline
               dataSource={{
