@@ -29,8 +29,9 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
-
 .carousel-item:last-child {
   margin-right: 0;
 }
@@ -102,32 +103,40 @@
 }
 
 .airEx {
-  border: 5px solid rgb(255, 255, 255);
+  border: none;
   border-radius: 12px;
   padding: 1px;
   width: 600px;
   margin: 0 50px 0 0;
 }
+
 .airEx:hover {
   color: rgba(52, 52, 52);
   opacity: 0.5;
 }
+
 .chatApp {
-  border: 5px solid rgb(255, 255, 255);
+  border: none;
   border-radius: 12px;
   padding: 1px;
   width: 300px;
   margin: 0 50px 0 0;
 }
+
 .chatApp:hover {
   color: rgba(52, 52, 52);
   opacity: 0.5;
 }
 
 .weather {
-  border: 5px solid rgb(255, 255, 255);
+  border: none;
   border-radius: 12px;
   padding: 1px;
   width: 600px;
   margin: 0 50px 0 0;
+}
+
+.weather:hover {
+  color: rgba(52, 52, 52);
+  opacity: 0.5;
 }

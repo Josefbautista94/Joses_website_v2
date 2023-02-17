@@ -45,6 +45,20 @@ class Project extends Component {
                 </a>
               </div>
             </div>
+
+            <div className="carousel-item">
+              <div className="container1">
+                <a href="https://colab.research.google.com/drive/1w2ZAhjqFsEExxdMLcQpB_aMjoYEpWPCa">
+                  <div className="image-label">
+                    2019 NYC Shooting Statistics{" "}
+                  </div>
+                  <img
+                    src={require("../Images/IMG_9483.jpg")}
+                    alt="Air Express App"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </header>
       </div>
