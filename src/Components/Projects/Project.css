@@ -31,6 +31,10 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  border: none; /* add this line to remove border */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .carousel-item:last-child {
   margin-right: 0;
