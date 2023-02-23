@@ -6,9 +6,11 @@ class Project extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
-      <div>
+      <div className="Project">
+        <div className="background-image" />
         <header className="Project-content">
           <h1 className="h1L"> My Projects</h1>
           <div className="carousel">
@@ -45,7 +47,6 @@ class Project extends Component {
                 </a>
               </div>
             </div>
-
             <div className="carousel-item">
               <div className="container1">
                 <a href="https://airexp.herokuapp.com/">
