@@ -1,9 +1,3 @@
-:root {
-  --primary-color: #c2b280;
-  --secondary-color: #deddd9;
-  --background-color: #e5d8b0;
-}
-
 /* Use a custom font */
 body {
   font-family: "Open Sans", sans-serif;
@@ -11,7 +5,7 @@ body {
 
 /* Use whitespace to improve readability */
 .Bio-content {
-  background: url("../Images/IMG_7614 2.jpg");
+  background: url("https://e1.pxfuel.com/desktop-wallpaper/234/504/desktop-wallpaper-pixel-art-live-pc-%E2%80%A2-for-you-for-mobile-8-bit-live.jpg");
   min-height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -27,83 +21,169 @@ body {
   overflow: hidden; /* Add this line to hide any content that extends beyond the element */
 }
 
-h2 {
-  color: var(--primary-color);
+.bioParagraph {
+  font-weight: 600;
+  color: rgb(181, 188, 194);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    to right,
+    rgb(64, 40, 43),
+    rgba(124, 22, 36, 0.922),
+    rgb(226, 94, 21),
+    rgb(49, 29, 32),
+    rgb(237, 167, 90)
+  );
+  background-size: 200% auto;
+  animation: Gradient s ease infinite;
+  border-radius: 10px 30px 10px 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  margin: 0;
+  font-family: Comic Sans MS, cursive;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
-p {
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  background-color: var(--background-color);
-  border-radius: 30px;
-  opacity: 0.9;
-
+.bottomOfPage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 20px;
-  max-width: 800px; /* Increase the max-width to make the paragraphs wider */
-  margin: 20px;
-  box-shadow: 0 4px 8px 0 rgba(173, 148, 5, 0.2);
+  display: none; /* Add this line to hide the bar initially */
 }
 
-.Front-pic {
-  height: 50vmin;
-  pointer-events: none;
-  border-radius: 45px;
+.bottomOfPage.show {
+  display: block; /* Add this selector to show the bar when the user scrolls down */
 }
-
-.RButton {
-  height: 70px; /* Increase the height to make the button bigger */
+.resumeButton {
+  height: 70px;
   width: 100%;
   font-size: 24px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: #fff;
   transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #d8c3a5, #e5d8b0);
+  background: linear-gradient(
+    to right,
+    rgb(64, 40, 43),
+    rgba(124, 22, 36, 0.922),
+    rgb(226, 94, 21),
+    rgb(49, 29, 32),
+    rgb(237, 167, 90)
+  );
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
-  border-radius: 35px; /* Half of the height */
+  border-radius: 35px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 10px 10px;
+  padding: 10px 20px;
   position: relative;
   border: none;
   outline: none;
   text-align: center;
 }
 
-.RButton:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 30px;
-  background-image: linear-gradient(to right, #bfa577, #c2b280);
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
-}
-
-.RButton:hover:before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.RButton:hover {
+.resumeButton:hover {
   transform: scale(1.1);
-  font-weight: bold;
-  border-radius: 80px;
-  color: rgb(255, 255, 255);
-  background-image: linear-gradient(to right, #e4a854, #c2560d);
-  background-size: 200% auto;
+  background-image: linear-gradient(to right, #820000eb, #0a0095);
   animation: Gradient 3s ease infinite;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-.paragraph {
-  background-color: var(--background-color);
+.paragraphContainer {
   text-align: center;
   font-weight: bold;
-  align-content: center;
+  padding: 65px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.bioTitle {
+  background: url("https://as2.ftcdn.net/v2/jpg/03/08/19/35/1000_F_308193597_wrVFo3mhHhsZzu6gJI0kdA5dO4PVKIa6.jpg");
+  background-size: cover;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  animation: Gradient 10s ease infinite;
   border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bioTitle:hover {
+  transform: rotate(360deg);
+  background-size: 150% auto;
+  animation: Gradient 5s ease infinite;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+}
+
+.bioTitle:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  background: inherit;
+  filter: blur(20px);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.bioTitle:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  background: inherit;
+  z-index: -2;
+  border-radius: inherit;
+  border: 2px solid #fff;
+}
+
+.bioTitle:hover:before {
+  filter: blur(30px);
+}
+
+.bioTitle:hover:after {
+  border: 4px solid #fff;
+  background: radial-gradient(circle at top left, transparent, #fff 25%);
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
