@@ -1,14 +1,15 @@
-h1 {
+.frontPageHeader {
   font-weight: 600;
   color: rgb(181, 188, 194);
   transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
+  background-image: linear-gradient(to right, #0a0095, #820000eb);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
   border-radius: 10px 30px 10px 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   margin: 0;
+  font-family: Comic Sans MS, cursive;
 }
 
 @keyframes Gradient {
@@ -23,12 +24,11 @@ h1 {
   }
 }
 
-h1:hover {
+.frontPageHeader:hover {
   transform: scale(1.1);
   font-weight: bold;
   border-radius: 30px 10px 30px 10px;
-  color: rgb(174, 143, 96);
-  background-image: linear-gradient(to right, #ffa17f, #00223e);
+  background-image: linear-gradient(to right, #820000eb, #0a0095);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
 }
@@ -40,7 +40,7 @@ h1:hover {
   font-weight: 600;
   color: rgb(181, 188, 194);
   transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
+  background-image: linear-gradient(to right, #820000eb, #0a0095);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
   border-radius: 25px; /* half of the height */
@@ -62,7 +62,7 @@ h1:hover {
   right: 5px;
   bottom: 5px;
   border-radius: 25px; /* half of the height */
-  background-image: linear-gradient(to right, #a06f0d, #22201f);
+  background-image: linear-gradient(to left, #0a0095, #820000eb);
   background-size: 200% auto;
   animation: Gradient 3s ease infinite;
 }
@@ -100,9 +100,9 @@ h1:hover {
 }
 
 .twit {
-  margin: 20px 0; /* Add some space around the timeline */
+  padding: 20px;
+  margin: 20px 0;
 }
-
 /* Style the Twitter widget iframe */
 .twit iframe {
   border: none; /* Remove the default border */
@@ -119,6 +119,12 @@ h1:hover {
 .twit {
   padding: 20px;
 }
+
 .twit .twitter-timeline {
+  padding: 10px;
   width: 100%;
+}
+.twit .twitter-tweet {
+  font-size: 16px; /* Change to your desired font size */
+  color: #333; /* Change to your desired color */
 }

@@ -8,7 +8,7 @@ class FrontPage extends Component {
     return (
       <div>
         <header className="Main-content">
-          <h1>Welcome To My Personal Website</h1>
+          <h1 className="frontPageHeader">Welcome To My Personal Website</h1>
           <Link to="/Bio">
             <button className="Buttons">About Me</button>
           </Link>
