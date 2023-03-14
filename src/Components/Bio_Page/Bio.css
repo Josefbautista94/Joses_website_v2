@@ -163,7 +163,7 @@ body {
   background: inherit;
   z-index: -2;
   border-radius: inherit;
-  border: 2px solid #fff;
+  border: 2px solid #3a3939;
 }
 
 .bioTitle:hover:before {
@@ -171,7 +171,7 @@ body {
 }
 
 .bioTitle:hover:after {
-  border: 4px solid #fff;
+  border: 4px solid #3c3c3c;
   background: radial-gradient(circle at top left, transparent, #fff 25%);
   animation: pulse 1s linear infinite;
 }
