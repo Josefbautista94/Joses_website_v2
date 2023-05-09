@@ -8,8 +8,9 @@ class FrontPage extends Component {
     return (
       <div>
         <header className="Main-content">
-          <h1 className="frontPageHeader">Welcome To My Personal Website</h1>
-          <Link to="/Bio">
+          <h1 className="frontPageHeader">Glad you could make it to my online home!
+</h1>
+          <Link className  to="/Bio">
             <button className="Buttons">About Me</button>
           </Link>
           <div className="twit">
@@ -20,8 +21,8 @@ class FrontPage extends Component {
                 screenName: "Jose_FrancisB",
               }}
               options={{
-                height: "700",
-                width: "800", // set width to 600px
+                height: "500",
+                width: "400", // set width to 600px
                 theme: "dark", // set theme to "dark"
               }}
             />
