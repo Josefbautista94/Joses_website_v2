@@ -1,7 +1,7 @@
 
 
 .Main-content {
-  background: url("../Images/IMG_7614 2.jpg");
+  background: url("https://www.rabelmarte.com/media/nyc-2.gif");
   height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -11,36 +11,51 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 1.5vmin);
+  
+}
+.frontPageHeader {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glowEffect 2s ease-in-out infinite alternate;
 }
 
-.twit {
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-}
-
-/* Style the Twitter widget iframe */
-.twit iframe {
-  border: none; /* Remove the default border */
-  width: 100%; /* Make the widget responsive */
-}
-
-@media (max-width: 767px) {
-  .twit {
-    width: 100%;
+@keyframes glowEffect {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-  .twit .timeline-Header {
-    display: none;
+  to {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
   }
 }
 
-.twit .twitter-timeline {
-  padding: 10px;
-  width: 100%;
+
+.container{
+
+  margin-bottom: 400px;
 }
 
-.twit .twitter-tweet {
-  font-size: 16px; /* Change to your desired font size */
-  color: #333; /* Change to your desired color */
+.Buttons {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #090101;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.Buttons:hover {
+  transform: scale(1.1);
+  background-color: #2186c4;
+  animation: Gradient 3s ease infinite;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);}
