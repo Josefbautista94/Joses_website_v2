@@ -5,7 +5,7 @@ body {
 
 /* Use whitespace to improve readability */
 .Bio-content {
-  background: url("https://e1.pxfuel.com/desktop-wallpaper/234/504/desktop-wallpaper-pixel-art-live-pc-%E2%80%A2-for-you-for-mobile-8-bit-live.jpg");
+  background: url("../Images/IMG_7614 2.jpg");
   min-height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -25,14 +25,7 @@ body {
   font-weight: 600;
   color: rgb(181, 188, 194);
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(
-    to right,
-    rgb(64, 40, 43),
-    rgba(124, 22, 36, 0.922),
-    rgb(226, 94, 21),
-    rgb(49, 29, 32),
-    rgb(237, 167, 90)
-  );
+
   background-size: 200% auto;
   animation: Gradient s ease infinite;
   border-radius: 10px 30px 10px 30px;
@@ -53,137 +46,47 @@ body {
   }
 }
 
-.bottomOfPage {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  display: none; /* Add this line to hide the bar initially */
-}
 
 .bottomOfPage.show {
   display: block; /* Add this selector to show the bar when the user scrolls down */
 }
 .resumeButton {
-  height: 70px;
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-  background: linear-gradient(
-    to right,
-    rgb(64, 40, 43),
-    rgba(124, 22, 36, 0.922),
-    rgb(226, 94, 21),
-    rgb(49, 29, 32),
-    rgb(237, 167, 90)
-  );
-  background-size: 200% auto;
-  animation: Gradient 3s ease infinite;
-  border-radius: 35px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  position: relative;
-  border: none;
-  outline: none;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
+  text-decoration: none;
+  background-color: #090101;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .resumeButton:hover {
   transform: scale(1.1);
-  background-image: linear-gradient(to right, #820000eb, #0a0095);
+  background-color: #2186c4;
   animation: Gradient 3s ease infinite;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
-.paragraphContainer {
+
+.bioTitle{
   text-align: center;
+  font-size: 6rem;
   font-weight: bold;
-  padding: 65px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.5;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glowEffect 2s ease-in-out infinite alternate;
 }
-.bioTitle {
-  background: url("https://as2.ftcdn.net/v2/jpg/03/08/19/35/1000_F_308193597_wrVFo3mhHhsZzu6gJI0kdA5dO4PVKIa6.jpg");
-  background-size: cover;
-  color: #fff;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  animation: Gradient 10s ease infinite;
-  border-radius: 30px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
+@keyframes glowEffect {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.bioTitle:hover {
-  transform: rotate(360deg);
-  background-size: 150% auto;
-  animation: Gradient 5s ease infinite;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-  border-radius: 50%;
-}
-
-.bioTitle:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  bottom: -10px;
-  left: -10px;
-  background: inherit;
-  filter: blur(20px);
-  z-index: -1;
-  border-radius: inherit;
-}
-
-.bioTitle:after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  bottom: -10px;
-  left: -10px;
-  background: inherit;
-  z-index: -2;
-  border-radius: inherit;
-  border: 2px solid #3a3939;
-}
-
-.bioTitle:hover:before {
-  filter: blur(30px);
-}
-
-.bioTitle:hover:after {
-  border: 4px solid #3c3c3c;
-  background: radial-gradient(circle at top left, transparent, #fff 25%);
-  animation: pulse 1s linear infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
+  to {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
   }
 }

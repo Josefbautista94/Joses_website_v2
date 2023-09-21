@@ -1,9 +1,20 @@
 import React, { Component } from "react";
-import "./NavBar.css";
 import { Link } from "react-router-dom";
+import { Timeline } from "react-twitter-widgets";
 import Pdf from "../Other_Items/JoseBautista_Resume.pdf";
+import "./NavBar.css";
 
 class NavBar extends Component {
+  state = {
+    showWidget: false,
+  };
+
+  toggleWidget = () => {
+    this.setState((prevState) => ({
+      showWidget: !prevState.showWidget,
+    }));
+  };
+
   render() {
     return (
       <div>
@@ -55,7 +66,27 @@ class NavBar extends Component {
               alt="Codewars badge"
             />
           </li>
+          {/* <li className="widget-toggle">
+            <button className="Navbar-link" onClick={this.toggleWidget}>
+              {this.state.showWidget ? "Hide Widget" : "Show Widget"}
+            </button>
+          </li> */}
         </ul>
+        {this.state.showWidget && (
+          <div className="twit">
+            <Timeline
+              dataSource={{
+                sourceType: "profile",
+                screenName: "Jose_FrancisB",
+              }}
+              options={{
+                height: "500",
+                width: "400",
+                theme: "dark",
+              }}
+            />
+          </div>
+        )}
       </div>
     );
   }
