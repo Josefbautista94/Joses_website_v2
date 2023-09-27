@@ -20,6 +20,12 @@ class Bio extends Component {
         <body className="Bio-content">
           <div>
             <h2 className="bioTitle">Small Biography About Me</h2>
+            <img
+                    className= "jose_hike"
+                    src={require("../Images/JoseHike.jpg")}
+                    alt="A Picture of me at a hike at Sams Point NY"
+                  />
+
             <div className="paragraphContainer" id="section1">
     <p className="bioParagraph">
         Hello everyone! My name is Jose Francisco Bautista. I'm a proud Mexican American from New York City, born in Harlem and raised in Washington Heights. As a Computer Science graduate from Lehman College, I'm always on the lookout for opportunities to hone my programming skills and craft innovative web applications.
