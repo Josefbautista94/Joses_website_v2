@@ -19,7 +19,7 @@ class Bio extends Component {
       <div>
         <body className="Bio-content">
           <div>
-            <h2 className="bioTitle">Small Biography About Me</h2>
+            <h2 className="bioTitle">From NYC Streets to Digital Suites: My Tale</h2>
             <img
                     className= "jose_hike"
                     src={require("../Images/JoseHike.jpg")}
@@ -28,7 +28,7 @@ class Bio extends Component {
 
 <div className="paragraphContainer" id="section1">
     <p className="bioParagraph">
-        Hello everyone! My name is Jose Francisco Bautista. I'm a proud Mexican American from New York City, born in Harlem and raised in Washington Heights. As a Computer Science graduate from Lehman College, I'm always on the lookout for opportunities to hone my programming skills and craft innovative web applications.
+    Thrilled you've taken a moment to delve deeper. My name is Jose Francisco Bautista. I'm a proud Mexican American from New York City, born in Harlem and raised in Washington Heights. As a Computer Science graduate from Lehman College, I'm always on the lookout for opportunities to hone my programming skills and craft innovative web applications.
     </p>
     <p className="bioParagraph">
         My passion for technology began in childhood, and I've been enamored with it ever since. I thrive on challenges, constantly pushing my boundaries to grow as a developer. Outside the realm of code, I'm deeply intrigued by the intricacies of the human mind. I often delve into psychology and philosophy books, seeking insights into human behavior and thought processes.
