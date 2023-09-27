@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Bio.css";
-import Pdf from "../Other_Items/JoseBautista_Resume.pdf";
+import Pdf from "../Other_Items/Jose_Bautista.pdf";
 
 window.addEventListener("scroll", function () {
   var bottomBar = document.querySelector(".bottomOfPage");
