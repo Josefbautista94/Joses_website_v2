@@ -5,7 +5,7 @@ body {
 
 /* Use whitespace to improve readability */
 .Bio-content {
-  background: url("../Images/IMG_7614 2.jpg");
+  background: url("https://images.unsplash.com/photo-1660914256311-918659fae88f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
   min-height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -33,6 +33,8 @@ body {
   padding: 10px 20px;
   margin: 0;
   font-family: Comic Sans MS, cursive;
+  margin-bottom: 20px; /* Add space between paragraphs */
+
 }
 @keyframes Gradient {
   0% {
