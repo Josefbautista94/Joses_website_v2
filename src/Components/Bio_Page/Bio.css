@@ -32,7 +32,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   margin: 0;
-  font-family: Comic Sans MS, cursive;
+  font-family: 'Avenir', sans-serif;
   margin-bottom: 20px; /* Add space between paragraphs */
 
 }
@@ -55,7 +55,7 @@ body {
 .resumeButton {
   display: inline-block;
   padding: 12px 24px;
-  font-family: Comic Sans MS, cursive;
+  font-family: 'Avenir', sans-serif;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
