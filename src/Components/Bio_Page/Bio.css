@@ -55,40 +55,39 @@ body {
 .resumeButton {
   display: inline-block;
   padding: 12px 24px;
-  font-size: 16px;
+  font-family: Comic Sans MS, cursive;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: #090101;
+  background: linear-gradient(45deg, #090101, #2a2a2a); /* Gradient background */
   color: #fff;
-  border-radius: 4px;
+  border-radius: 50px; /* Fully rounded edges */
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glowEffect 2s ease-in-out infinite alternate;
 }
 
 .resumeButton:hover {
-  transform: scale(1.1);
+  transform: scale(1.05); /* Slight scale on hover */
   background-color: #2186c4;
-  animation: Gradient 3s ease infinite;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
+.resumeButton:active {
+  transform: scale(0.98); /* Slight scale inwards on active click */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow on active click */
+}
 .bioTitle{
   text-align: center;
   font-size: 6rem;
   font-weight: bold;
-  color: #ffffff;
+  color: rgb(181, 188, 194);
   margin-top: 50px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: glowEffect 2s ease-in-out infinite alternate;
-}
-@keyframes glowEffect {
-  from {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  to {
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-  }
 }
