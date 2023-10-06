@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Timeline } from "react-twitter-widgets";
-import Pdf from "../Other_Items/JoseBautista_Resume.pdf";
+import Pdf from "../Other_Items/Jose_Bautista.pdf";
 import "./NavBar.css";
 
 class NavBar extends Component {
