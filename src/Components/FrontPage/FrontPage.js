@@ -22,14 +22,12 @@ class FrontPage extends Component {
   render() {
     return (
       <div className="pageContainer">
-        <div className="Main-content">
-          <div className="container">
-            <h1 className="frontPageHeader">
-              Glad You Could Make It To My Online Home!
-            </h1>
-            <button className="Buttons" onClick={this.toggleBio}>About Me</button>
-          </div>
-        </div>
+      <div className="container">
+        <h1 className="frontPageHeader">
+          Glad You Could Make It To My Online Home!
+        </h1>
+        <button className="Buttons" onClick={this.toggleBio}>About Me</button>
+      </div>
         {this.state.showBio && (
           <div className="bioDiv" ref={this.bioDivRef}> 
           <div>
@@ -82,15 +80,15 @@ class FrontPage extends Component {
     </div>
   </div>
   <div className="bottomOfPage">
-    <a className="resumeButton" href={Pdf}>
+    <a className="Buttons" href={Pdf}>
       Take a look at my resume
     </a>
   </div>
 </div>
      )}
-     </div>
-   );
- }
+         </div>
+    );
+  }
 }
 
 export default FrontPage;

@@ -1,25 +1,16 @@
-
 .pageContainer {
-  background: url("https://images.unsplash.com/photo-1660914256311-918659fae88f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background: url("https://wallpapers.com/images/featured/black-and-grey-iphone-nkfy6lrxwvt7gfh7.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-
-.Main-content {
-  background: url("https://images.unsplash.com/photo-1660914256311-918659fae88f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-  height: auto; /* Change from 100vh to auto */
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  font-size: calc(10px + 1.5vmin);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 1.5vmin);
-
 }
+
 .frontPageHeader {
   text-align: center;
   font-size: 6rem;
@@ -176,39 +167,15 @@ body {
   }
 }
 
-
+.bottomOfPage {
+  padding-bottom: 50px; /* Add padding to the bottom */
+  text-align: center; /* Center the content */
+}
 .bottomOfPage.show {
   display: block; /* Add this selector to show the bar when the user scrolls down */
-}
-.resumeButton {
-  display: inline-block;
-  padding: 12px 24px;
-  font-family: 'Avenir', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  background: linear-gradient(45deg, #090101, #2a2a2a); /* Gradient background */
-  color: #fff;
-  border-radius: 50px; /* Fully rounded edges */
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: glowEffect 2s ease-in-out infinite alternate;
+  
 }
 
-.resumeButton:hover {
-  transform: scale(1.05); /* Slight scale on hover */
-  background-color: #2186c4;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
-
-.resumeButton:active {
-  transform: scale(0.98); /* Slight scale inwards on active click */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow on active click */
-}
 .bioTitle{
   text-align: center;
   font-size: 5rem;
