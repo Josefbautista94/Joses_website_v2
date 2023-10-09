@@ -53,32 +53,72 @@
 }
 
 .Buttons {
+  position: relative; /* Added for the pseudo-element positioning */
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 28px; /* Adjusted padding for a more rectangular shape */
   font-family: 'Avenir', sans-serif;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background: linear-gradient(45deg, #090101, #2a2a2a); /* Gradient background */
+  background: linear-gradient(45deg, #090101, #2a2a2a);
   color: #fff;
-  border-radius: 50px; /* Fully rounded edges */
+  border-radius: 5px; /* Slight rounded corners for the rectangle */
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: glowEffect 2s ease-in-out infinite alternate;
+  overflow: hidden; /* Added to clip the pseudo-element */ animation: pulse 1.5s infinite alternate;
+  
+  /* Shadow Glow */
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6), 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6), 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8), 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.Buttons:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: rgba(0, 0, 0, 0.2); /* Slight black overlay for 3D effect */
+  border-radius: 3px; /* Slight rounded corners to match the button */
+  transition: opacity 0.3s ease;
+  opacity: 0.6;
+  
 }
 
 .Buttons:hover {
-  transform: scale(1.05); /* Slight scale on hover */
   background-color: #2186c4;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px) scale(1.07); /* Slight upward shift and scale on hover */
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.9), 0px 8px 16px rgba(0, 0, 0, 0.4);
 }
-.Buttons:active{
-  transform: scale(0.98); /* Slight scale inwards on active click */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow on active click */
+.Buttons:hover:before {
+  opacity: 0.4; /* Adjust the opacity on hover */
+}
+.Buttons:after {
+  /* Arrow or Hand Emoji/Icon */
+  content: " 👈🏼"; /* You can replace this with any other emoji or icon */
+  margin-left: 10px;
+}
+
+
+.Buttons:active {
+  transform: translateY(0); /* Reset the position on active click */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
   body, html {
