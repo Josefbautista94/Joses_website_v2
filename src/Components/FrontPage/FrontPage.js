@@ -47,9 +47,9 @@ class FrontPage extends Component {
         {this.state.showBio && (
           <div className="bioDiv" ref={this.bioDivRef}>
             <div>
-              <h2 className="bioTitle">
+              <h4 className="bioTitle">
                 From NYC Streets to Digital Suites: My Tale
-              </h2>
+              </h4>
               <img
                 className="jose_hike"
                 src={require("../Images/JoseHike.jpg")}

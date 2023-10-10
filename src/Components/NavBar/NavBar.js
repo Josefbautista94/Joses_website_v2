@@ -5,16 +5,7 @@ import Pdf from "../Other_Items/Jose_Bautista.pdf";
 import "./NavBar.css";
 
 class NavBar extends Component {
-  state = {
-    showWidget: false,
-  };
-
-  toggleWidget = () => {
-    this.setState((prevState) => ({
-      showWidget: !prevState.showWidget,
-    }));
-  };
-
+ 
   render() {
     return (
       <div>
@@ -72,21 +63,7 @@ class NavBar extends Component {
             </button>
           </li> */}
         </ul>
-        {this.state.showWidget && (
-          <div className="twit">
-            <Timeline
-              dataSource={{
-                sourceType: "profile",
-                screenName: "Jose_FrancisB",
-              }}
-              options={{
-                height: "500",
-                width: "400",
-                theme: "dark",
-              }}
-            />
-          </div>
-        )}
+     
       </div>
     );
   }
