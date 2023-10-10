@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Timeline } from "react-twitter-widgets";
 import Pdf from "../Other_Items/Jose_Bautista.pdf";
 import "./NavBar.css";
 
 class NavBar extends Component {
- 
+
   render() {
     return (
       <div>
@@ -57,11 +56,7 @@ class NavBar extends Component {
               alt="Codewars badge"
             />
           </li>
-          {/* <li className="widget-toggle">
-            <button className="Navbar-link" onClick={this.toggleWidget}>
-              {this.state.showWidget ? "Hide Widget" : "Show Widget"}
-            </button>
-          </li> */}
+     
         </ul>
      
       </div>
