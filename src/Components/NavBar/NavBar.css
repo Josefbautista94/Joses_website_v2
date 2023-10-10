@@ -21,8 +21,6 @@
   animation: glowEffect 2s ease-in-out infinite alternate;
 
 }
-
-/* For the Projects link */
 .Projects {
   background: url("https://icones.pro/wp-content/uploads/2021/07/icone-du-design-rouge.png");
   background-size: 70px;
@@ -31,8 +29,6 @@
   animation: glowEffect 2s ease-in-out infinite alternate;
 
 }
-
-/* For the Git-Hub link */
 .git {
   background: url("data:image/png;base64,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");
   background-size: 100px;
@@ -42,7 +38,6 @@
 
 }
 
-/* For the LinkedIn Link */
 .linkedIn {
   background: url("https://www.iconninja.com/files/731/248/914/share-linkedin-media-social-icon.svg");
   background-size: 110px;
@@ -52,7 +47,6 @@
 
 }
 
-/* For My Contact Info */
 .contact {
   background: url("https://cdn-icons-png.flaticon.com/128/10195/10195658.png");
   background-size: 70px;
@@ -136,8 +130,6 @@ li a {
 @media screen and (max-width: 600px) {
   ul {
     flex-wrap: wrap;
-      display: none;
-
   }
 
   li {
@@ -156,3 +148,33 @@ li a {
   }
 }
 
+.twit {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+/* Style the Twitter widget iframe */
+.twit iframe {
+  border: none; /* Remove the default border */
+  width: 100%; /* Make the widget responsive */
+}
+
+@media (max-width: 767px) {
+  .twit {
+    width: 100%;
+  }
+  .twit .timeline-Header {
+    display: none;
+  }
+}
+
+.twit .twitter-timeline {
+  padding: 10px;
+  width: 100%;
+}
+
+.twit .twitter-tweet {
+  font-size: 16px; /* Change to your desired font size */
+  color: #333; /* Change to your desired color */
+}
