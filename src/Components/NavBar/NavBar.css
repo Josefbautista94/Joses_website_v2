@@ -165,16 +165,65 @@ li a {
   .clock {
     background-size: 40px; /* Reduced size for better fit */
   }
-
   .codeWars {
-    background-size: 40px; /* Adjust this value to your preference */
-    padding: 15px 10px; /* Adjust padding if needed */
-  }
+    display: flex;           /* Convert the container to a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    margin-left: auto;
+    padding: 25px 20px 15px 20px;
+}
 }
 
 @media screen and (max-width: 320px) {
-  ul li .codeWars {
-    background-size: 30px;
-    padding: 10px 5px;
+  .codeWars {
+    display: flex;           /* Convert the container to a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    margin-left: auto;
+    padding: 25px 20px 15px 20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 5px 0;
   }
+
+  li {
+    width: 90%; /* Reduce width to 90% for some side spacing */
+    text-align: center;
+    padding: 5px 0; /* Reduced padding for thinner appearance */
+    margin: 5px 0; /* Added margin for spacing between items */
+  }
+
+  li a {
+    padding: 5px;
+    font-size: 14px; /* Reduced font size for better fit */
+  }
+
+  .name {
+    background-size: 60px;
+    font-size: 16px;
+  }
+
+  /* Adjusting background images for better visibility */
+  .mainPage,
+  .Projects,
+  .git,
+  .linkedIn,
+  .contact,
+  .resume,
+  .clock {
+    background-size: 40px; /* Reduced size for better fit */
+  }
+  .codeWars {
+    display: flex;           /* Convert the container to a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    margin-left: auto;
+    padding: 25px 20px 15px 20px;
+}
 }
