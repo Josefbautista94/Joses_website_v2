@@ -124,9 +124,6 @@ li a {
 
 }
 
-li a:hover {
-  color: rgb(0, 0, 0);  /* Change to any color that contrasts with white */
-}
 
 .clock {
   background: url("https://cdna.artstation.com/p/assets/images/images/025/838/622/original/joseph-p-ezgif-3-e2bfd5146b1a.gif?1587078655&dl=1");
