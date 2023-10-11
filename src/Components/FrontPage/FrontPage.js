@@ -40,9 +40,9 @@ class FrontPage extends Component {
     return (
       <div className="pageContainer">
         <div className="container">
-          <h1 className="frontPageHeader">
-            Glad You Could Make It To My Online Home!
-          </h1>
+        <h1 className="frontPageHeader">
+  From the Big Apple's Core to My Digital Door – Welcome Aboard!
+</h1>
 
           <button className="Buttons" onClick={this.toggleBio}>
             About Me
