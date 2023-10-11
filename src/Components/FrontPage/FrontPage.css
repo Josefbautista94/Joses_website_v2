@@ -13,27 +13,33 @@
 
 .frontPageHeader {
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem; /* Adjusted for better readability */
   font-weight: bold;
   color: #ffffff;
   margin-top: 50px;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px; /* Increased bottom margin for better spacing */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Darker and more pronounced shadow */
   animation: glowEffect 2s ease-in-out infinite alternate;
+  letter-spacing: 2px; /* Added letter spacing for a more airy feel */
+  line-height: 1.2; /* Adjusted line height for better spacing between lines */
+  padding: 20px; /* Padding around the text for the background effect */
+  border-radius: 15px; /* Rounded corners for the background */
+}
+
+@keyframes glowEffect {
+  from {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.02); /* Slight zoom-in effect */
+  }
+  to {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), 0px 0px 15px rgba(255, 255, 255, 0.8);
+    transform: scale(1); /* Reset to original size */
+  }
 }
 
 @media screen and (max-width: 600px) {
   .frontPageHeader {
     font-size: 3rem; /* Adjust as needed */
-  }
-}
-
-@keyframes glowEffect {
-  from {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  to {
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
   }
 }
 
