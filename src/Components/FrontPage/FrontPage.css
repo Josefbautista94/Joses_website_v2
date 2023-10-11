@@ -241,7 +241,7 @@ body {
   transition: box-shadow 0.3s ease; /* Smooth transition for the shadow on hover */
   width: 100%; /* Adjust this value as needed */
   max-width: 1000px; /* Adjust this value as needed */
-  height: 500px !important;  /* Adjust the height as needed */
+  height: 750px !important;  /* Adjust the height as needed */
 
   margin-bottom: 5px;  /* Adjust the value as needed */
 
