@@ -67,6 +67,7 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
+  
 
 }
 .name:hover {
@@ -87,6 +88,8 @@
 /* For the Codewars badge */
 .codeWars {
   margin-left: auto;
+  padding: 25px 20px 15px 20px;  /* Increased padding-top to 25px */
+
 }
 
 /* Styles for the nav bar itself */
@@ -134,7 +137,8 @@ li a {
   color: rgb(255, 255, 255);
   font-weight: bold;
   margin-left: auto;
-  padding: 14px 16px;
+  padding: 25px 20px 15px 20px;  /* Increased padding-top to 25px */
+  
 }
 
 /* For screens smaller than 600px */
@@ -159,33 +163,3 @@ li a {
   }
 }
 
-.twit {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-}
-
-/* Style the Twitter widget iframe */
-.twit iframe {
-  border: none; /* Remove the default border */
-  width: 100%; /* Make the widget responsive */
-}
-
-@media (max-width: 767px) {
-  .twit {
-    width: 100%;
-  }
-  .twit .timeline-Header {
-    display: none;
-  }
-}
-
-.twit .twitter-timeline {
-  padding: 10px;
-  width: 100%;
-}
-
-.twit .twitter-tweet {
-  font-size: 16px; /* Change to your desired font size */
-  color: #333; /* Change to your desired color */
-}
