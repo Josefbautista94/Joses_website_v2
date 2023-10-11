@@ -28,7 +28,13 @@ class FrontPage extends Component {
     const script = document.createElement("script");
     script.src = "https://platform.twitter.com/widgets.js";
     document.body.appendChild(script);
-  }
+
+    // Add viewport meta tag
+    const meta = document.createElement('meta');
+    meta.name = "viewport";
+    meta.content = "width=device-width, initial-scale=1.0";
+    document.getElementsByTagName('head')[0].appendChild(meta);
+}
 
   render() {
     return (
@@ -111,7 +117,6 @@ class FrontPage extends Component {
     href="https://twitter.com/Jose_FrancisB?ref_src=twsrc%5Etfw"
     data-theme="dark"  // This line sets the theme to dark
 >
-    Tweets by Jose_FrancisB
 </a>
             <script
               async
