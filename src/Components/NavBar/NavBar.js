@@ -4,7 +4,6 @@ import Pdf from "../Other_Items/Jose_Bautista.pdf";
 import "./NavBar.css";
 
 class NavBar extends Component {
-
   render() {
     return (
       <div>
@@ -56,9 +55,7 @@ class NavBar extends Component {
               alt="Codewars badge"
             />
           </li>
-     
         </ul>
-     
       </div>
     );
   }

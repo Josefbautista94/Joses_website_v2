@@ -19,8 +19,6 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-  
-
 }
 .Projects {
   background: url("https://img.icons8.com/ios7/600w/FFFFFF/project.png");
@@ -28,7 +26,6 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-
 }
 .git {
   background: url("https://git-scm.com/images/logos/downloads/Git-Icon-White.png");
@@ -37,7 +34,6 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-
 }
 
 .linkedIn {
@@ -46,7 +42,6 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-
 }
 
 .contact {
@@ -55,7 +50,6 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-
 }
 
 /* For my name on the Nav Bar */
@@ -67,7 +61,6 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-
 }
 .name:hover {
   color: rgb(255, 255, 255);
@@ -81,12 +74,12 @@
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
-
 }
 
 /* For the Codewars badge */
 .codeWars {
   margin-left: auto;
+  padding: 25px 20px 15px 20px; /* Increased padding-top to 25px */
 }
 
 /* Styles for the nav bar itself */
@@ -98,7 +91,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: rgb(0, 0, 0);
-  position:relative;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -114,16 +107,14 @@ li a {
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 25px 20px 15px 20px;  /* Increased padding-top to 25px */
+  padding: 25px 20px 15px 20px; /* Increased padding-top to 25px */
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.3);  /* Semi-transparent black */
-  border-radius: 5px;  /* Optional: to round the edges */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  border-radius: 5px; /* Optional: to round the edges */
   font-weight: bold;
-  font-weight: 900;  /* Maximum boldness */
-
+  font-weight: 900; /* Maximum boldness */
 }
-
 
 .clock {
   background: url("https://cdna.artstation.com/p/assets/images/images/025/838/622/original/joseph-p-ezgif-3-e2bfd5146b1a.gif?1587078655&dl=1");
@@ -134,58 +125,56 @@ li a {
   color: rgb(255, 255, 255);
   font-weight: bold;
   margin-left: auto;
-  padding: 14px 16px;
+  padding: 25px 20px 15px 20px; /* Increased padding-top to 25px */
 }
 
 /* For screens smaller than 600px */
+/* For screens smaller than 600px */
 @media screen and (max-width: 600px) {
   ul {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 5px 0;
   }
 
   li {
-    width: 100%;
+    width: 90%; /* Reduce width to 90% for some side spacing */
     text-align: center;
-    padding: 10px 0;
-  }
-
-  .name {
-    background-size: 80px;
+    padding: 5px 0; /* Reduced padding for thinner appearance */
+    margin: 5px 0; /* Added margin for spacing between items */
   }
 
   li a {
-    padding: 10px;
+    padding: 5px;
+    font-size: 14px; /* Reduced font size for better fit */
+  }
+
+  .name {
+    background-size: 60px;
     font-size: 16px;
   }
-}
 
-.twit {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-}
-
-/* Style the Twitter widget iframe */
-.twit iframe {
-  border: none; /* Remove the default border */
-  width: 100%; /* Make the widget responsive */
-}
-
-@media (max-width: 767px) {
-  .twit {
-    width: 100%;
+  /* Adjusting background images for better visibility */
+  .mainPage,
+  .Projects,
+  .git,
+  .linkedIn,
+  .contact,
+  .resume,
+  .clock {
+    background-size: 40px; /* Reduced size for better fit */
   }
-  .twit .timeline-Header {
-    display: none;
+
+  .codeWars {
+    background-size: 40px; /* Adjust this value to your preference */
+    padding: 15px 10px; /* Adjust padding if needed */
   }
 }
 
-.twit .twitter-timeline {
-  padding: 10px;
-  width: 100%;
-}
-
-.twit .twitter-tweet {
-  font-size: 16px; /* Change to your desired font size */
-  color: #333; /* Change to your desired color */
+@media screen and (max-width: 320px) {
+  ul li .codeWars {
+    background-size: 30px;
+    padding: 10px 5px;
+  }
 }
