@@ -14,15 +14,16 @@
 
 /* For the Home Page link */
 .mainPage {
-  background: url("https://www.clker.com/cliparts/w/r/j/t/E/o/red-outline-md.png");
-  background-size: 70px;
+  background: url("https://www.clker.com/cliparts/V/e/M/B/J/D/white-outline-house-small-hi.png");
+  background-size: 60px;
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
+  
 
 }
 .Projects {
-  background: url("https://icones.pro/wp-content/uploads/2021/07/icone-du-design-rouge.png");
+  background: url("https://img.icons8.com/ios7/600w/FFFFFF/project.png");
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,8 +31,9 @@
 
 }
 .git {
-  background: url("data:image/png;base64,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");
-  background-size: 100px;
+  background: url("https://git-scm.com/images/logos/downloads/Git-Icon-White.png");
+
+  background-size: 60px;
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
@@ -39,8 +41,8 @@
 }
 
 .linkedIn {
-  background: url("https://www.iconninja.com/files/731/248/914/share-linkedin-media-social-icon.svg");
-  background-size: 110px;
+  background: url("data:image/png;base64,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");
+  background-size: 50px;
   background-position: center;
   background-repeat: no-repeat;
   animation: glowEffect 2s ease-in-out infinite alternate;
@@ -48,7 +50,7 @@
 }
 
 .contact {
-  background: url("https://cdn-icons-png.flaticon.com/128/10195/10195658.png");
+  background: url("https://static.vecteezy.com/system/resources/previews/015/117/357/original/envelope-icon-in-white-colors-mail-signs-illustration-png.png");
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,7 +76,7 @@
 }
 /* For the Resume link */
 .resume {
-  background: url("https://cdn-icons-png.flaticon.com/128/10195/10195838.png");
+  background: url("https://ty.ie/wp-content/uploads/2019/07/cv-icon.png");
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,10 +114,18 @@ li a {
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 14px 0;
+  padding: 25px 20px 15px 20px;  /* Increased padding-top to 25px */
   text-decoration: none;
-
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);  /* Semi-transparent black */
+  border-radius: 5px;  /* Optional: to round the edges */
   font-weight: bold;
+  font-weight: 900;  /* Maximum boldness */
+
+}
+
+li a:hover {
+  color: rgb(0, 0, 0);  /* Change to any color that contrasts with white */
 }
 
 .clock {
