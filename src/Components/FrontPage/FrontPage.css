@@ -208,8 +208,7 @@ body {
 .bottomOfPage {
   padding-bottom: 50px;
   text-align: center;
-   /* Add padding to the bottom */
-   /* Center the content */
+
 }
 .bottomOfPage.show {
   display: block;
