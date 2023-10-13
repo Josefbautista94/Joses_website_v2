@@ -1,134 +1,161 @@
 .pageContainer {
+  align-items: center;
   background: url("https://wallpapers.com/images/featured/black-and-grey-iphone-nkfy6lrxwvt7gfh7.jpg");
   background-position: center center;
-  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  font-size: calc(10px + 1.5vmin);
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: calc(10px + 1.5vmin);
   justify-content: center;
+  min-height: 90vh;
+
 }
 
 .frontPageHeader {
-  text-align: center;
-  font-size: 5rem; /* Adjusted for better readability */
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 50px;
-  margin-bottom: 30px; /* Increased bottom margin for better spacing */
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Darker and more pronounced shadow */
   animation: glowEffect 2s ease-in-out infinite alternate;
-  letter-spacing: 2px; /* Added letter spacing for a more airy feel */
-  line-height: 1.2; /* Adjusted line height for better spacing between lines */
-  padding: 20px; /* Padding around the text for the background effect */
-  border-radius: 15px; /* Rounded corners for the background */
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+
+   /* Adjusted for better readability */
+   /* Increased bottom margin for better spacing */
+   /* Darker and more pronounced shadow */
+   /* Added letter spacing for a more airy feel */
+   /* Adjusted line height for better spacing between lines */
+   /* Padding around the text for the background effect */
+   /* Rounded corners for the background */
 }
 
 @keyframes glowEffect {
   from {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(255, 255, 255, 0.5);
-    transform: scale(1.02); /* Slight zoom-in effect */
+    transform: scale(1.02);
+
+     /* Slight zoom-in effect */
   }
   to {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), 0px 0px 15px rgba(255, 255, 255, 0.8);
-    transform: scale(1); /* Reset to original size */
+    transform: scale(1);
+
+     /* Reset to original size */
   }
 }
 
 @media screen and (max-width: 600px) {
   .frontPageHeader {
-    font-size: 3rem; /* Adjust as needed */
+    font-size: 3rem;
+     /* Adjust as needed */
   }
 }
 
-
-.container{  display: flex;
-  flex-direction: column;
+.container{
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   justify-content: center;
-  height: 100%; /* or you can set a specific height if needed */
+  padding-bottom: 50px;
   width: 100%;
-  padding-bottom: 50px; /* Add padding to the bottom */
 
-
+   /* or you can set a specific height if needed */
+   /* Add padding to the bottom */
 }
 
 .Buttons {
-  position: relative; /* Added for the pseudo-element positioning */
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  animation: pulse 1.5s infinite alternate;
+  background: linear-gradient(45deg, #090101, #2a2a2a);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6), 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
-  padding: 14px 28px; /* Adjusted padding for a more rectangular shape */
   font-family: 'Avenir', sans-serif;
   font-size: 25px;
   font-weight: bold;
+  overflow: hidden;
+  padding: 14px 28px;
+  position: relative;
   text-align: center;
   text-decoration: none;
-  background: linear-gradient(45deg, #090101, #2a2a2a);
-  color: #fff;
-  border-radius: 5px; /* Slight rounded corners for the rectangle */
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: glowEffect 2s ease-in-out infinite alternate;
-  overflow: hidden; /* Added to clip the pseudo-element */ animation: pulse 1.5s infinite alternate;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+   /* Added for the pseudo-element positioning */
+   /* Adjusted padding for a more rectangular shape */
+   /* Slight rounded corners for the rectangle */
+   /* Added to clip the pseudo-element */ 
   /* Shadow Glow */
-  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6), 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6), 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1.05);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8), 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
   }
 }
 
 .Buttons:before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
   bottom: 2px;
-  background: rgba(0, 0, 0, 0.2); /* Slight black overlay for 3D effect */
-  border-radius: 3px; /* Slight rounded corners to match the button */
-  transition: opacity 0.3s ease;
+  content: "";
+  left: 2px;
   opacity: 0.6;
-  
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  transition: opacity 0.3s ease;
+
+   /* Slight black overlay for 3D effect */
+   /* Slight rounded corners to match the button */
 }
 
 .Buttons:hover {
   background-color: #2186c4;
-  transform: translateY(-2px) scale(1.07); /* Slight upward shift and scale on hover */
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.9), 0px 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px) scale(1.07);
+
+   /* Slight upward shift and scale on hover */
 }
 .Buttons:hover:before {
-  opacity: 0.4; /* Adjust the opacity on hover */
+  opacity: 0.4;
+   /* Adjust the opacity on hover */
 }
 .Buttons:after {
-  /* Arrow or Hand Emoji/Icon */
-  content: " 👈🏼"; /* You can replace this with any other emoji or icon */
+  content: " 👈🏼";
   margin-left: 10px;
+  /* Arrow or Hand Emoji/Icon */
+   /* You can replace this with any other emoji or icon */
 }
 
-
 .Buttons:active {
-  transform: translateY(0); /* Reset the position on active click */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+   /* Reset the position on active click */
 }
 
   body, html {
     height: 100%;
-    overflow-y: auto; /* This allows for vertical scrolling */
+    overflow-y: auto;
+
+     /* This allows for vertical scrolling */
   }
-  
+
   /* Use a custom font */
 body {
   font-family: "Open Sans", sans-serif;
@@ -136,36 +163,35 @@ body {
 
 /* Use whitespace to improve readability */
 .Bio-content {
+  align-items: center;
   background: url("https://images.unsplash.com/photo-1660914256311-918659fae88f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
-  min-height: 100vh;
   background-position: center center;
-  background-size: cover;
   background-repeat: no-repeat;
-
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
 
-  overflow: hidden; /* Add this line to hide any content that extends beyond the element */
+   /* Add this line to hide any content that extends beyond the element */
 }
 
 .bioParagraph {
-  font-weight: 600;
+  animation: Gradient s ease infinite;
+  background-size: 200% auto;
+  border-radius: 10px 30px 10px 30px;
   color: rgb(181, 188, 194);
+  font-family: 'Avenir', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
 
-  background-size: 200% auto;
-  animation: Gradient s ease infinite;
-  border-radius: 10px 30px 10px 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  margin: 0;
-  font-family: 'Avenir', sans-serif;
-  margin-bottom: 20px; /* Add space between paragraphs */
-
+   /* Add space between paragraphs */
 }
 @keyframes Gradient {
   0% {
@@ -180,57 +206,51 @@ body {
 }
 
 .bottomOfPage {
-  padding-bottom: 50px; /* Add padding to the bottom */
-  text-align: center; /* Center the content */
+  padding-bottom: 50px;
+  text-align: center;
+
 }
 .bottomOfPage.show {
-  display: block; /* Add this selector to show the bar when the user scrolls down */
-  
+  display: block;
+   /* Add this selector to show the bar when the user scrolls down */
 }
 
 .bioTitle{
-  text-align: center;
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  color: #ffffff;
   font-size: 5rem;
   font-weight: bold;
-  color: #ffffff;
-  margin-top: 50px;
   margin-bottom: 20px;
+  margin-top: 50px;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: glowEffect 2s ease-in-out infinite alternate;
 }
 
 .jose_hike {
-  /* Set a max width to ensure the image doesn't overflow its container */
-  max-width: 30%;
-  
-  /* Add some space around the image */
-  margin: 20px 0;
-
-  /* Add a subtle shadow for depth */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
-  /* Optional: Add a border-radius for rounded corners */
-  border-radius: 10px;
-
-  /* Optional: Add a border */
   border: 2px solid #e0e0e0;
-
-  /* Ensure the image scales down if it's too large */
-  width: auto;
-  height: auto;
-
-  /* Center the image if it's inside a container */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   display: block;
+  height: auto;
+  margin: 20px 0;
   margin-left: auto;
   margin-right: auto;
+  max-width: 30%;
+  width: auto;
+  /* Set a max width to ensure the image doesn't overflow its container */
+  /* Add some space around the image */
+  /* Add a subtle shadow for depth */
+  /* Optional: Add a border-radius for rounded corners */
+  /* Optional: Add a border */
+  /* Ensure the image scales down if it's too large */
+  /* Center the image if it's inside a container */
 }
 
 /* If you want a hover effect */
 .jose_hike:hover {
-  /* Slightly increase the size of the image on hover */
   transform: scale(2.00);
-  
-  /* Transition for smooth scaling */
   transition: transform 0.3s ease;
+  /* Slightly increase the size of the image on hover */
+  /* Transition for smooth scaling */
 }
 
