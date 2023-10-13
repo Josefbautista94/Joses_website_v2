@@ -57,7 +57,17 @@ function Project() {
     <div className="project-label">Air Express</div>
   </a>
 </div>
-        {/* Add more projects in a similar structure */}
+<div className="carousel-item">
+  <a href="https://colab.research.google.com/drive/1w2ZAhjqFsEExxdMLcQpB_aMjoYEpWPCa?usp=sharing">
+  <img
+                    className="carousel-image"
+                    src={require("../Images/IMG_9483.jpg")}
+                    alt="Air Express App"
+                  />
+    <div className="project-label">Google Colab Shared Project</div>
+  </a>
+</div>
+        {/* If I want to add more projects just add above */}
       </div>
     </div>
   );

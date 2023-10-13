@@ -1,9 +1,15 @@
 .project-page {
+  align-items: center;
+  background: url("https://wallpapers.com/images/featured/black-and-grey-iphone-nkfy6lrxwvt7gfh7.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 50px 0;
-  background-color: #f4f4f4; /* Light gray background */
+  font-size: calc(10px + 1.5vmin);
+  justify-content: center;
+  min-height: 90vh;
+
 }
 
 .project-title {
