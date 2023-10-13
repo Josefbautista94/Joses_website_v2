@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./FrontPage.css";
 import Pdf from "../Other_Items/Jose_Bautista.pdf";
 
+
 class FrontPage extends Component {
   state = {
     showBio: false,
@@ -25,6 +26,13 @@ class FrontPage extends Component {
 
   componentDidMount() {
     // Load the Twitter script to render the feed
+
+    if (!document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://platform.twitter.com/widgets.js";
+      script.charSet = "utf-8";
+      document.body.appendChild(script);
+  }
     const script = document.createElement("script");
     script.src = "https://platform.twitter.com/widgets.js";
     document.body.appendChild(script);
@@ -34,6 +42,7 @@ class FrontPage extends Component {
     meta.name = "viewport";
     meta.content = "width=device-width, initial-scale=1.0";
     document.getElementsByTagName('head')[0].appendChild(meta);
+    
 }
 
   render() {
@@ -112,19 +121,7 @@ class FrontPage extends Component {
             </div>
           </div>
         )}
-           <div className="twitterFeed">
-          <a 
-    class="twitter-timeline" 
-    href="https://twitter.com/Jose_FrancisB?ref_src=twsrc%5Etfw"
-    data-theme="dark"  // This line sets the theme to dark
->
-</a>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-          </div>
+    
       </div>
     );
   }
