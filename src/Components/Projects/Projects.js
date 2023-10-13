@@ -1,69 +1,76 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Project.css";
 
-class Project extends Component {
-  render() {
-    return (
-      <div className="project-container">
-        <div className="Project-content">
-          <h1 className="h1L"> My Projects</h1>
-          <div className="carousel">
-            <div className="carousel-item">
-              <div className="container2">
-                <a href="https://coolchatapp-7488f.web.app/">
-                  <div className="image-label">Messaging App</div>
-                  <img
-                    className="carousel-image"
-                    src={require("../Images/chatapp.png")}
-                    alt="Messaging App"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="container1">
-                <a href="https://weather-zeta-two.vercel.app/">
-                  <div className="image-label">Weather App</div>
-                  <img
-                    className="carousel-image"
-                    src={require("../Images/weather.png")}
-                    alt="Weather App"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="container1">
-                <a href="https://airexp.herokuapp.com/">
-                  <div className="image-label">Air Express App</div>
-                  <img
-                    className="carousel-image"
-                    src={require("../Images/Airport.png")}
-                    alt="Air Express App"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="container1">
-                <a href="https://airexp.herokuapp.com/">
-                  <div className="image-label">
-                    2020 NYC Shoooting Statistics{" "}
-                  </div>
-                  <img
+function Project() {
+  return (
+    <div className="project-page">
+      <h1 className="project-title">My Projects</h1>
+      <div className="carousel">
+        {/* Example Project */}
+<div className="carousel-item">
+  <a href="https://heroversus.vercel.app/">
+    <iframe 
+      src="https://heroversus.vercel.app/" 
+      title="Hero Versus Project" 
+      width="500" 
+      height="300" 
+      frameBorder="0">
+    </iframe>
+    <div className="project-label">Hero Versus</div>
+  </a>
+</div>
+
+<div className="carousel-item">
+  <a href="https://weather-zeta-two.vercel.app/">
+    <iframe 
+      src="https://weather-zeta-two.vercel.app/" 
+      title="Weather Project" 
+      width="500" 
+      height="300" 
+      frameBorder="0">
+    </iframe>
+    <div className="project-label">Weather</div>
+  </a>
+</div>
+<div className="carousel-item">
+  <a href="https://coolchatapp-7488f.web.app/">
+    <iframe 
+      src="https://coolchatapp-7488f.web.app/" 
+      title="Cool Chat App" 
+      width="500" 
+      height="300" 
+      frameBorder="0">
+    </iframe>
+    <div className="project-label">Cool Chat App</div>
+  </a>
+</div>
+
+<div className="carousel-item">
+  <a href="https://airexp.herokuapp.com/">
+    <iframe 
+      src="https://airexp.herokuapp.com/" 
+      title="Air Express Project" 
+      width="500" 
+      height="300" 
+      frameBorder="0">
+    </iframe>
+    <div className="project-label">Air Express</div>
+  </a>
+</div>
+<div className="carousel-item">
+  <a href="https://colab.research.google.com/drive/1w2ZAhjqFsEExxdMLcQpB_aMjoYEpWPCa?usp=sharing">
+  <img
                     className="carousel-image"
                     src={require("../Images/IMG_9483.jpg")}
                     alt="Air Express App"
                   />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="project-label">Google Colab Shared Project</div>
+  </a>
+</div>
+        {/* If I want to add more projects just add above */}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Project;
-
