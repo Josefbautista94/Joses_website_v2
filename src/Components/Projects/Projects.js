@@ -5,6 +5,7 @@ function Project() {
   return (
     <div className="project-page">
       <h1 className="project-title">My Projects</h1>
+      <div>
       <div className="carousel">
         {/* Example Project */}
 <div className="carousel-item">
@@ -68,6 +69,7 @@ function Project() {
   </a>
 </div>
         {/* If I want to add more projects just add above */}
+      </div>
       </div>
     </div>
   );
