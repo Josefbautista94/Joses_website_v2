@@ -21,15 +21,14 @@
 .carousel {
   display: flex;
   overflow-x: scroll; /* Enable horizontal scrolling */
-  width: 80%; /* Set the desired width of the carousel */
+  width: 75%; /* Set the desired width of the carousel */
   gap: 20px; /* Spacing between carousel items */
   margin: 0 auto; /* Center the carousel on the page */
   padding: 20px 0; /* Add some padding for spacing */
 }
-
 .carousel-item {
-  min-width: 250px;
-  width: 300px;
+  flex: 0 0 100%; /* Each item takes up 100% of the carousel width */
+  height: 500px; /* Set the height of the carousel items */
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -56,16 +55,43 @@
   bottom: 0;
   width: 100%;
 }
-.carousel-item iframe,
+.carousel-item iframe {
+  width: 100%; /* Make the iframe take the full width of the container */
+  height: 600px; /* Adjust the height as needed */
+  border: none;
+}
 .carousel-item img {
   width: 100%;
-  height: auto;
-  max-height: 200px; /* Set the maximum height for consistency */
+  height: 100%; /* Make the iframe and images fill the height of the carousel item */
   display: block;
 }
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* This prevents horizontal scrolling */
+}
+
+.projectButtons {
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  animation: pulse 1.5s infinite alternate;
+  background: linear-gradient(45deg, #090101, #2a2a2a);
+  border: none;
+  border-radius: 50px; /* Adjusted to make the button round */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 
+              0px 0px 15px rgba(255, 255, 255, 0.6), 
+              0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Avenir', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 14px 28px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin: 20px; /* Added margin to give space around the button */
 }
