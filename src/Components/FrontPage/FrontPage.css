@@ -91,11 +91,6 @@
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-   /* Added for the pseudo-element positioning */
-   /* Adjusted padding for a more rectangular shape */
-   /* Slight rounded corners for the rectangle */
-   /* Added to clip the pseudo-element */ 
-  /* Shadow Glow */
 }
 
 @keyframes pulse {

@@ -2,6 +2,9 @@ import React from "react";
 import "./Project.css";
 
 function Project() {
+
+
+  
   return (
     <div className="project-page">
       <h1 className="project-title">My Projects</h1>
@@ -13,7 +16,7 @@ function Project() {
     <iframe 
       src="https://heroversus.vercel.app/" 
       title="Hero Versus Project" 
-      width="500" 
+      width="800" 
       height="300" 
       frameBorder="0">
     </iframe>
@@ -26,7 +29,7 @@ function Project() {
     <iframe 
       src="https://weather-zeta-two.vercel.app/" 
       title="Weather Project" 
-      width="500" 
+      width="800" 
       height="300" 
       frameBorder="0">
     </iframe>
@@ -38,7 +41,7 @@ function Project() {
     <iframe 
       src="https://coolchatapp-7488f.web.app/" 
       title="Cool Chat App" 
-      width="500" 
+      width="800" 
       height="300" 
       frameBorder="0">
     </iframe>
@@ -51,7 +54,7 @@ function Project() {
     <iframe 
       src="https://airexp.herokuapp.com/" 
       title="Air Express Project" 
-      width="500" 
+      width="800" 
       height="300" 
       frameBorder="0">
     </iframe>
@@ -70,9 +73,23 @@ function Project() {
 </div>
         {/* If I want to add more projects just add above */}
       </div>
+      <button className="projectButtons" onClick={() => scrollCarousel('prev')}>Previous</button>
+<button className="projectButtons" onClick={() => scrollCarousel('next')}>Next</button>
+
       </div>
     </div>
   );
 }
 
 export default Project;
+
+function scrollCarousel(direction) {
+  const carousel = document.querySelector('.carousel');
+  const itemWidth = document.querySelector('.carousel-item').offsetWidth;
+  if (direction === 'next') {
+    carousel.scrollLeft += itemWidth;
+  } else {
+    carousel.scrollLeft -= itemWidth;
+  }
+}
+
