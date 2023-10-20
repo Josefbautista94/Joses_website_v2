@@ -10,29 +10,34 @@ section {
 
 .contactPage {
   background: rgb(0, 0, 0);
-  min-height: 100vh;
+  align-items: center;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   background-repeat: no-repeat;
-
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 90vh;
+
+
 }
 
 h3 {
   color: rgb(252, 252, 252);
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  border-radius: 15px;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* .Email-pic{
-    position: relative;
-    top: -10px;
-  } */
+
 .mailto {
   background: url("../Images/58485698e0bb315b0f7675a8.png");
   position: relative;
