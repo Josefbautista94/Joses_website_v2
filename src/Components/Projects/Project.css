@@ -30,8 +30,7 @@
 .carousel {
   display: flex;
   overflow-x: scroll; /* Enable horizontal scrolling */
-  width: 75%; /* Set the desired width of the carousel */
-  gap: 20px; /* Spacing between carousel items */
+  width: 65%; /* Set the desired width of the carousel */
   margin: 0 auto; /* Center the carousel on the page */
   padding: 20px 0; /* Add some padding for spacing */
 }
