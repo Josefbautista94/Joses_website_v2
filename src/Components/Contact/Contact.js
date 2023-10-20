@@ -7,8 +7,7 @@ class Contact extends Component {
     return (
       <div>
         <header className="contactPage">
-          <h1>Contact Me Here At:</h1>
-          <h3>Click The Mail Icon To Shoot Me An E-Mail!</h3>
+          <h3 className ="click">Click The Mail Icon To Shoot Me An E-Mail!</h3>
           {/* <img src={logo} className="Email-pic" alt="logo" /> */}
 
           <a class="mailto" href="mailto:JoseF.Bautista22@gmail.com"></a>
