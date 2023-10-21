@@ -12,7 +12,7 @@ class Contact extends Component {
 
           <a class="mailto" href="mailto:JoseF.Bautista22@gmail.com"></a>
 
-          <h1>JoseF.Bautista22@gmail.com</h1>
+          <h1 className = "email ">JoseF.Bautista22@gmail.com</h1>
         </header>
       </div>
     );
