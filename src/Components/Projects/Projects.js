@@ -73,8 +73,8 @@ function Project() {
 </div>
         {/* If I want to add more projects just add above */}
       </div>
-      <button className="projectButtons" onClick={() => scrollCarousel('prev')}>Previous</button>
-<button className="projectButtons" onClick={() => scrollCarousel('next')}>Next</button>
+      <button className="previous" onClick={() => scrollCarousel('prev')}>Previous</button>
+<button className="next" onClick={() => scrollCarousel('next')}>Next</button>
 
       </div>
     </div>

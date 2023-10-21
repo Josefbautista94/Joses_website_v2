@@ -41,13 +41,8 @@ class NavBar extends Component {
               Resume
             </a>
           </li>
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=KWotO76SuXE"
-              className="name"
-            >
-              Jose F. Bautista
-            </a>
+          <li  >
+             <a className="name">Jose F. Bautista</a> 
           </li>
           <Clock className="clock" />
           <li className="codeWars">
