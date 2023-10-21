@@ -25,14 +25,6 @@
   padding: 20px;
   text-align: center;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-
-   /* Adjusted for better readability */
-   /* Increased bottom margin for better spacing */
-   /* Darker and more pronounced shadow */
-   /* Added letter spacing for a more airy feel */
-   /* Adjusted line height for better spacing between lines */
-   /* Padding around the text for the background effect */
-   /* Rounded corners for the background */
 }
 
 @keyframes glowEffect {
