@@ -8,14 +8,6 @@ class NavBar extends Component {
     return (
       <div>
         <ul>
-        <li>
-            <a
-              href="https://www.youtube.com/watch?v=KWotO76SuXE"
-              className="name"
-            >
-              Jose F. Bautista
-            </a>
-          </li>
           <li className="mainPage"
           >
             <Link to="/Front-Page">Home Page</Link>
@@ -49,7 +41,14 @@ class NavBar extends Component {
               Resume
             </a>
           </li>
-         
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=KWotO76SuXE"
+              className="name"
+            >
+              Jose F. Bautista
+            </a>
+          </li>
           <Clock className="clock" />
           <li className="codeWars">
             <img
