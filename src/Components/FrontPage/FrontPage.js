@@ -116,7 +116,7 @@ class FrontPage extends Component {
             </div>
             <div className="bottomOfPage">
               <a className="Buttons" href={Pdf}>
-                Take a look at my resume
+                Take A Look At My Resume
               </a>
             </div>
           </div>
