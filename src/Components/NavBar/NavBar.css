@@ -117,37 +117,15 @@ li a {
 }
 
 .clock {
-    background: url("https://cdna.artstation.com/p/assets/images/images/025/838/622/original/joseph-p-ezgif-3-e2bfd5146b1a.gif?1587078655&dl=1");
-    background-size: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    margin-left: auto;
-    padding: 25px 20px 15px 20px;
-   animation: glowEffect 2s ease-in-out infinite alternate, pulseEffect 1s infinite alternate;
-   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-
-}
-
-/* Existing glowEffect animation */
-@keyframes glowEffect {
-    0% {
-        color: rgb(255, 255, 255);
-    }
-    100% {
-        color: rgb(200, 200, 200);
-    }
-}
-
-/* New pulseEffect animation */
-@keyframes pulseEffect {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
+  background: url("https://cdna.artstation.com/p/assets/images/images/025/838/622/original/joseph-p-ezgif-3-e2bfd5146b1a.gif?1587078655&dl=1");
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: glowEffect 2s ease-in-out infinite alternate;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-left: auto;
+  padding: 25px 20px 15px 20px; /* Increased padding-top to 25px */
 }
 
 /* For screens smaller than 600px */
@@ -207,50 +185,6 @@ li a {
 }
 
 @media screen and (max-width: 768px) {
-  ul {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 5px 0;
-  }
-
-  li {
-    width: 90%; /* Reduce width to 90% for some side spacing */
-    text-align: center;
-    padding: 5px 0; /* Reduced padding for thinner appearance */
-    margin: 5px 0; /* Added margin for spacing between items */
-  }
-
-  li a {
-    padding: 5px;
-    font-size: 14px; /* Reduced font size for better fit */
-  }
-
-  .name {
-    background-size: 60px;
-    font-size: 16px;
-  }
-
-  /* Adjusting background images for better visibility */
-  .mainPage,
-  .Projects,
-  .git,
-  .linkedIn,
-  .contact,
-  .resume,
-  .clock {
-    background-size: 40px; /* Reduced size for better fit */
-  }
-  .codeWars {
-    display: flex;           /* Convert the container to a flex container */
-    justify-content: center; /* Horizontally center the content */
-    align-items: center;     /* Vertically center the content */
-    margin-left: auto;
-    padding: 25px 20px 15px 20px;
-}
-}
-
-@media screen and (max-width: 1024px) {
   ul {
     display: flex;
     flex-direction: column; /* Stack items vertically */
