@@ -8,9 +8,10 @@
   flex-direction: column;
   font-size: calc(10px + 1.5vmin);
   justify-content: center;
-  min-height: 90vh;
-
+  min-height: 100vh; /* Adjusted to take at least the full height of the viewport */
+  padding: 20px; /* Added padding to prevent content from touching the edges */
 }
+
 
 .project-title {
   animation: glowEffect 2s ease-in-out infinite alternate;
@@ -79,15 +80,10 @@ body {
   overflow-x: hidden; /* This prevents horizontal scrolling */
 }
 
-.previous {
-  animation: glowEffect 2s ease-in-out infinite alternate;
-  animation: pulse 1.5s infinite alternate;
-  background: linear-gradient(45deg, #090101, #2a2a2a);
-  border: none;
-  border-radius: 50px; /* Adjusted to make the button round */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 
-              0px 0px 15px rgba(255, 255, 255, 0.6), 
-              0px 4px 8px rgba(0, 0, 0, 0.2);
+.previous, .next {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -101,30 +97,17 @@ body {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  margin: 20px; /* Added margin to give space around the button */
+  margin-bottom: 20px; /* Added margin to ensure buttons don’t touch the bottom */
+  margin-right: 20px; /* Adjust the value as needed */
+
+}
+.previous:hover, .next:hover {
+  transform: scale(1.1); /* Enlarges the buttons */
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 0px 8px 16px rgba(0, 0, 0, 0.4); /* Adds a shadow */
+  background-color: rgba(255, 255, 255, 0.1); /* Adds a subtle white background */
 }
 
-.next{
-  animation: glowEffect 2s ease-in-out infinite alternate;
-  animation: pulse 1.5s infinite alternate;
-  background: linear-gradient(45deg, #090101, #2a2a2a);
-  border: none;
-  border-radius: 50px; /* Adjusted to make the button round */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 
-              0px 0px 15px rgba(255, 255, 255, 0.6), 
-              0px 4px 8px rgba(0, 0, 0, 0.2);
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Avenir', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  overflow: hidden;
-  padding: 14px 28px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  margin: 20px; /* Added margin to give space around the button */
+.previous:active, .next:active {
+  transform: scale(1); /* Returns to original size when clicked */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Returns to original shadow when clicked */
 }
