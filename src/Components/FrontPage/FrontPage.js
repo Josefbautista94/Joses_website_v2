@@ -50,8 +50,7 @@ class FrontPage extends Component {
       <div className="pageContainer">
         <div className="container">
         <h1 className="frontPageHeader">
-  From the Big Apple's Core to My Digital Door – Welcome Aboard!
-</h1>
+        From Concrete Jungles to Digital Domains: Navigating New Horizons!</h1>
 
           <button className="Buttons" onClick={this.toggleBio}>
             About Me
