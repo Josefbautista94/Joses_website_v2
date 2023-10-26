@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import "./FrontPage.css";
 import Pdf from "../Other_Items/Jose_Bautista.pdf";
 
-
 class FrontPage extends Component {
   state = {
     showBio: false,
     frontPageHeader: "",
-
   };
 
   headers = [
@@ -18,13 +16,11 @@ class FrontPage extends Component {
     // If i want to add more headers just add it here.
   ];
 
- // my function to get random headers
+  // my function to get random headers
   getRandomHeader = () => {
     const randomIndex = Math.floor(Math.random() * this.headers.length);
     return this.headers[randomIndex];
   };
-
-  
 
   bioDivRef = React.createRef();
 
@@ -42,51 +38,51 @@ class FrontPage extends Component {
     );
   };
 
-  
-
   componentDidMount() {
     // Load the Twitter script to render the feed
 
-    if (!document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')) {
+    if (
+      !document.querySelector(
+        'script[src="https://platform.twitter.com/widgets.js"]'
+      )
+    ) {
       const script = document.createElement("script");
       script.src = "https://platform.twitter.com/widgets.js";
       script.charSet = "utf-8";
       document.body.appendChild(script);
-  }
+    }
     const script = document.createElement("script");
     script.src = "https://platform.twitter.com/widgets.js";
     document.body.appendChild(script);
 
     // Add viewport meta tag
-    const meta = document.createElement('meta');
+    const meta = document.createElement("meta");
     meta.name = "viewport";
     meta.content = "width=device-width, initial-scale=1.0";
-    document.getElementsByTagName('head')[0].appendChild(meta);
+    document.getElementsByTagName("head")[0].appendChild(meta);
 
-    
     this.setState({
       frontPageHeader: this.getRandomHeader(),
     });
-}
+  }
 
   render() {
     return (
       <div className="pageContainer">
         <div className="container">
-        <h1 className="frontPageHeader">
+          <h1 className="frontPageHeader">
             {this.state.frontPageHeader} {/* Updated this line to use state */}
           </h1>
 
           <button className="Buttons" onClick={this.toggleBio}>
             About Me
           </button>
-       
         </div>
 
         {this.state.showBio && (
           <div className="bioDiv" ref={this.bioDivRef}>
             <div>
-            <img
+              <img
                 className="jose_hike"
                 src={require("../Images/JoseHike.jpg")}
                 alt="A Picture of me at a hike at Sams Point NY"
@@ -95,7 +91,7 @@ class FrontPage extends Component {
               <h4 className="bioTitle">
                 From NYC Streets to Digital Suites: My Tale
               </h4>
-          
+
               <div className="paragraphContainer" id="section1">
                 <p className="bioParagraph">
                   Thrilled you've taken a moment to delve deeper. My name is
@@ -145,7 +141,6 @@ class FrontPage extends Component {
             </div>
           </div>
         )}
-    
       </div>
     );
   }
