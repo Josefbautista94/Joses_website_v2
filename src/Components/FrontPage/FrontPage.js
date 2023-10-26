@@ -6,7 +6,25 @@ import Pdf from "../Other_Items/Jose_Bautista.pdf";
 class FrontPage extends Component {
   state = {
     showBio: false,
+    frontPageHeader: "",
+
   };
+
+  headers = [
+    "From Concrete Jungles to Digital Domains: Navigating New Horizons!",
+    "Navigating the Digital Landscape: A Journey from Streets to Screens!",
+    "Coding Through Life’s Adventures: From Cityscapes to Cyberspaces!",
+    "Blending Bytes and Beats: A Symphony of Code and Creativity!",
+    // If i want to add more headers just add it here.
+  ];
+
+ // my function to get random headers
+  getRandomHeader = () => {
+    const randomIndex = Math.floor(Math.random() * this.headers.length);
+    return this.headers[randomIndex];
+  };
+
+  
 
   bioDivRef = React.createRef();
 
@@ -23,6 +41,8 @@ class FrontPage extends Component {
       }
     );
   };
+
+  
 
   componentDidMount() {
     // Load the Twitter script to render the feed
@@ -42,7 +62,11 @@ class FrontPage extends Component {
     meta.name = "viewport";
     meta.content = "width=device-width, initial-scale=1.0";
     document.getElementsByTagName('head')[0].appendChild(meta);
+
     
+    this.setState({
+      frontPageHeader: this.getRandomHeader(),
+    });
 }
 
   render() {
@@ -50,7 +74,8 @@ class FrontPage extends Component {
       <div className="pageContainer">
         <div className="container">
         <h1 className="frontPageHeader">
-        From Concrete Jungles to Digital Domains: Navigating New Horizons!</h1>
+            {this.state.frontPageHeader} {/* Updated this line to use state */}
+          </h1>
 
           <button className="Buttons" onClick={this.toggleBio}>
             About Me
