@@ -13,7 +13,18 @@ class FrontPage extends Component {
     "Navigating the Digital Landscape: A Journey from Streets to Screens!",
     "Coding Through Life’s Adventures: From Cityscapes to Cyberspaces!",
     "Blending Bytes and Beats: A Symphony of Code and Creativity!",
-    // If i want to add more headers just add it here.
+    "From Byte Beats to Urban Streets: Harmonizing Code and Culture!",
+    "Journeying Through Code: From Skyline Algorithms to Digital Dreamscapes!",
+    "Embarking on Digital Expeditions: From Urban Grids to Grid Systems!",
+    "Coding Symphonies: Where Urban Rhythms Meet Digital Harmonies!",
+    "Navigating Code Canyons: From Urban Mazes to Algorithmic Labyrinths!",
+    "Crafting Digital Skylines: Where Code and Creativity Intersect!",
+    "Beyond the Concrete: Soaring in the Infinite Sky of Codes and Nodes!",
+    "Urban Codes: Weaving the Streets of Technology with Threads of Innovation!",
+    "Coding Narratives: Composing Tales from Silicon Alleys to Digital Valleys!",
+    "In the Heart of the Code Jungle: Pioneering Paths of Innovation and Exploration!",
+    // If you want to add more headers just add them here.
+
   ];
 
   // my function to get random headers
@@ -39,6 +50,8 @@ class FrontPage extends Component {
   };
 
   componentDidMount() {
+
+
     // Load the Twitter script to render the feed
 
     if (
@@ -61,6 +74,7 @@ class FrontPage extends Component {
     meta.content = "width=device-width, initial-scale=1.0";
     document.getElementsByTagName("head")[0].appendChild(meta);
 
+    //Loads my page headers
     this.setState({
       frontPageHeader: this.getRandomHeader(),
     });
