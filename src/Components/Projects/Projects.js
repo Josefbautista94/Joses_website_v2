@@ -10,8 +10,8 @@ function Project() {
       <h1 className="project-title">My Projects</h1>
       <div>
       <div className="carousel">
-        {/* Example Project */}
-<div className="carousel-item">
+        {/* If I want to add more projects just add under here so the most recent one can be at the front */}
+        <div className="carousel-item">
   <a href="https://heroversus.vercel.app/">
     <iframe 
       src="https://heroversus.vercel.app/" 
@@ -71,7 +71,6 @@ function Project() {
     <div className="project-label">Google Colab Shared Project</div>
   </a>
 </div>
-        {/* If I want to add more projects just add above */}
       </div>
       <button className="previous" onClick={() => scrollCarousel('prev')}>Previous</button>
 <button className="next" onClick={() => scrollCarousel('next')}>Next</button>
