@@ -113,6 +113,7 @@ body {
     background-color 0.3s ease;
   margin-bottom: 20px; /* Added margin to ensure buttons don’t touch the bottom */
   margin-right: 20px; /* Adjust the value as needed */
+  margin-top: 40px;
 }
 .previous:hover,
 .next:hover {
