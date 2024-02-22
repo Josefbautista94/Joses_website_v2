@@ -149,7 +149,8 @@ class FrontPage extends Component {
               </div>
             </div>
             <div className="bottomOfPage">
-              <a className="Buttons" href={Pdf}>
+              <a className="Buttons" href={Pdf}  target="_blank"
+              rel="noopener noreferrer">
                 Take A Look At My Resume
               </a>
             </div>
