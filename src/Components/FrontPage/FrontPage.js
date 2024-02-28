@@ -24,7 +24,6 @@ class FrontPage extends Component {
     "Coding Narratives: Composing Tales from Silicon Alleys to Digital Valleys!",
     "In the Heart of the Code Jungle: Pioneering Paths of Innovation and Exploration!",
     // If you want to add more headers just add them here.
-
   ];
 
   // my function to get random headers
@@ -50,8 +49,6 @@ class FrontPage extends Component {
   };
 
   componentDidMount() {
-
-
     // Load the Twitter script to render the feed
 
     if (
@@ -149,8 +146,12 @@ class FrontPage extends Component {
               </div>
             </div>
             <div className="bottomOfPage">
-              <a className="Buttons" href={Pdf}  target="_blank"
-              rel="noopener noreferrer">
+              <a
+                className="Buttons"
+                href={Pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Take A Look At My Resume
               </a>
             </div>
